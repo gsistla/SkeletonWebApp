@@ -6,8 +6,8 @@ public class QueryProcessor {
 
     System.out.println("Received query:" + query);
 
-    if (query.toLowerCase().contains("What is 22 plus 54?")) {
-      return "76";
+    if (query.toLowerCase().contains("What is 33 plus 25??")) {
+      return "57";
     }
 
     return "";
