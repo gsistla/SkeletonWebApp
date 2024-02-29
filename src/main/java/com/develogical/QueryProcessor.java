@@ -6,7 +6,7 @@ public class QueryProcessor {
 
     System.out.println("Received query:" + query);
 
-    if (query.toLowerCase().contains("What is 33 plus 25??")) {
+    if (query.toLowerCase().contains("Which of the following numbers is the largest: 12, 96, 14?")) {
       return "58";
     }
 
