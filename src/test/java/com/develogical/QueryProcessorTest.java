@@ -35,4 +35,14 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("What is 23 minus 7?"), is("16"));
   }
 
+  @Test
+  public void calculateSquareAndCube() throws Exception{
+    assertThat(queryProcessor.process("Which of the following numbers is both a square and a cube: 2, 64, 16, 729, 27, 5, 10?"), is("64, 729"));
+  }
+
+  @Test
+  public void calculatePrimes() throws Exception{
+    assertThat(queryProcessor.process("Which of the following numbers are primes: 60, 83, 29, 7, 45?"), is("83, 29, 7"));
+  }
+
 }
