@@ -20,14 +20,14 @@ public class QueryProcessor {
 //            What is 72 plus 87?
 
     if (query.toLowerCase().contains("plus")) {
-      String string = query.replace("What is ", "").replace(" plus", "").replace(" ?", "");
+      String string = query.replace("What is ", "").replace(" plus", "").replace("?", "");
       String[] stringsArray = string.split(" " );
       Integer finalInt = Integer.parseInt(stringsArray[0]) + Integer.parseInt(stringsArray[1]);
       return finalInt.toString();
     }
 
     if(query.toLowerCase().contains("multiplied by")) {
-      String string = query.replace("What is ", "").replace(" multiplied by", "").replace(" ?", "");
+      String string = query.replace("What is ", "").replace(" multiplied by", "").replace("?", "");
       String[] stringsArray = string.split(" " );
       Integer finalInt = Integer.parseInt(stringsArray[0]) * Integer.parseInt(stringsArray[1]);
       return finalInt.toString();
