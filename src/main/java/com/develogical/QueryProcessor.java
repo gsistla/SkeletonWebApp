@@ -26,6 +26,13 @@ public class QueryProcessor {
       return finalInt.toString();
     }
 
+    if (query.toLowerCase().contains("minus")) {
+      String string = query.replace("What is ", "").replace(" minus", "").replace("?", "");
+      String[] stringsArray = string.split(" " );
+      Integer finalInt = Integer.parseInt(stringsArray[0]) - Integer.parseInt(stringsArray[1]);
+      return finalInt.toString();
+    }
+
     if(query.toLowerCase().contains("multiplied by")) {
       String string = query.replace("What is ", "").replace(" multiplied by", "").replace("?", "");
       String[] stringsArray = string.split(" " );

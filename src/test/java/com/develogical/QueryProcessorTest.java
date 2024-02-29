@@ -30,4 +30,9 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("What is 5 multiplied by 81?"), is("405"));
   }
 
+  @Test
+  public void calculateMinus() throws Exception{
+    assertThat(queryProcessor.process("What is 23 minus 7?"), is("16"));
+  }
+
 }
