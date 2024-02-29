@@ -12,8 +12,8 @@ public class QueryProcessor {
           + "writer in the English language and the world's pre-eminent dramatist.";
     }
 
-    if (query.toLowerCase().contains("What is your name?")) {
-      return "Yen & Gayatri";
+    if (query.toLowerCase().contains("What is 89 plus 5?")) {
+      return "94";
     }
 
     return "";
