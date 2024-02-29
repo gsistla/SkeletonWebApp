@@ -52,6 +52,15 @@ public class QueryProcessor {
       return commonElements.toString().replace("[", "").replace("]", "");
     }
 
+    if (query.toLowerCase().contains("square and a cube: ")) {
+      String string = query.replace("Which of the following numbers is both a square and a cube: ", "").replace("?", "");
+      String[] stringsArray = string.split(", " );
+      List<String> stringsList = Arrays.asList(stringsArray);
+      List<String> PrimesArrays = Arrays.asList("2", "3", "5", "7", "11", "13", "17", "19", "23", "29", "31", "37", "41", "43", "47", "53", "59", "61", "67", "71", "73", "79", "83", "89", "97");
+      List<String> commonElements = new ArrayList<>(stringsList);
+      commonElements.retainAll(PrimesArrays);
+      return commonElements.toString().replace("[", "").replace("]", "");
+    }
 
     return "";
   }
