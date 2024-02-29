@@ -6,14 +6,8 @@ public class QueryProcessor {
 
     System.out.println("Received query:" + query);
 
-    if (query.toLowerCase().contains("shakespeare")) {
-      return "William Shakespeare (26 April 1564 - 23 April 1616) was an "
-          + "English poet, playwright, and actor, widely regarded as the greatest "
-          + "writer in the English language and the world's pre-eminent dramatist.";
-    }
-
-    if (query.toLowerCase().contains("Which of the following numbers is the largest: 6, 7, 55?")) {
-      return "55";
+    if (query.toLowerCase().contains("Which of the following numbers is the largest: 87, 63, 10?")) {
+      return "87";
     }
 
     return "";
